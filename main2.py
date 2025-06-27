@@ -77,7 +77,7 @@ def load_telco_data():
     
     return pd.DataFrame(data)
 
-# Preprocess data for modeling (matching Book4 approach)
+# Preprocess data for modeling 
 @st.cache_data
 def preprocess_data(df):
     """Preprocess data for machine learning"""
@@ -101,7 +101,7 @@ def preprocess_data(df):
     
     return df_processed, label_encoders
 
-# Train model (matching Book4 approach)
+# Train model 
 @st.cache_resource
 def train_churn_model(df_processed):
     """Train the Random Forest model as in Book4"""
